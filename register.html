@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Option 1: Include in HTML -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container d-sm-flex align-items-center vh-100">
+      <div class="container r">
+        <div class="row text-center">
+          <div class="col-auto mx-auto mt-5 mb-2">
+            <h2 class="text-black-70 display-6 font-monospace">
+              Register for, Eonix
+            </h2>
+          </div>
+        </div>
+        <!--Navigation Buttons-->
+        <div class="row justify-content-center mt-4 mb-5">
+          <div class="col-auto">
+            <a
+              href="index.html"
+              class="btn btn-lg btn-outline-primary shadow px-md-5"
+              >Login</a
+            >
+          </div>
+          <div class="col-auto">
+            <a href="#" class="btn btn-lg btn-primary active shadow px-md-5"
+              >Sign Up</a
+            >
+          </div>
+        </div>
+        <!--Form Start-->
+        <div class="container-fluid">
+          <form>
+            <div class="row row-cols-sm-1 gy-sm-3 mb-3 justify-content-between">
+              <div class="col-auto form-floating">
+                <input
+                  type="text"
+                  name="text"
+                  id="fname"
+                  placeholder="Email or Username"
+                  class="form-control"
+                />
+                <label for="fname" class="form-label">
+                  &nbsp;&nbsp;First Name</label
+                >
+              </div>
+              <div class="col-auto form-floating">
+                <input
+                  type="text"
+                  name="text"
+                  id="lname"
+                  placeholder="Email or Username"
+                  class="form-control"
+                />
+                <label for="lname" class="form-label"
+                  >&nbsp;&nbsp;Last Name</label
+                >
+              </div>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                class="form-control"
+              />
+              <label for="email" class="form-label">Email</label>
+            </div>
+            <div class="mb-3 form-floating">
+              <input
+                type="password"
+                name="pwd"
+                id="pwd"
+                placeholder="Password"
+                class="form-control"
+              />
+              <label for="pwd" class="form-label">Password</label>
+            </div>
+            <div class="row my-3">
+              <div class="col-auto">
+                <span class="text-dark">Select Gender: </span>
+              </div>
+              <div class="col-auto">
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault1"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Male
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault2"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Female
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="row my-3">
+              <div class="col">
+                <label for="city" class="form-label">City</label>
+                <input
+                  class="form-control"
+                  list="datalistOptions"
+                  id="city"
+                  placeholder="Type to search..."
+                />
+                <datalist id="datalistOptions">
+                  <option value="Karur"></option>
+                  <option value="Dindigul"></option>
+                  <option value="Trivandrum"></option>
+                  <option value="Chennai"></option>
+                  <option value="Banglore"></option>
+                </datalist>
+              </div>
+              <div class="col">
+                <label for="state" class="form-label">State</label>
+                <select class="form-select state">
+                  <option selected>Select State</option>
+                  <option value="1">Tamil Nadu</option>
+                  <option value="2">Kerala</option>
+                  <option value="3">Karnataka</option>
+                </select>
+              </div>
+              <div class="col">
+                <label for="zip" class="form-label">Zip Code</label>
+                <input
+                  type="number"
+                  name="zip"
+                  id="zip"
+                  class="form-control"
+                  placeholder="Enter zip code"
+                />
+              </div>
+            </div>
+            <div class="row mx-auto mt-4 mb-3">
+              <div class="col-auto form-check form-switch">
+                <input type="checkbox" class="form-check-input" id="rem" />
+                <label for="rem" class="form-check-label"
+                  >Subscribe for Newsletters</label
+                >
+              </div>
+            </div>
+            <div class="row mb-2 align-items-center">
+              <div class="col-auto mx-auto">
+                <button href="#" class="btn btn-primary">Sign Up &rarr;</button>
+              </div>
+              <div class="col-auto mx-auto">
+                <a href="index.html" class="text-reset"
+                  >I already have account</a
+                >
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="container l rounded-3 shadow">
+        <div
+          id="carouselExampleInterval"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4000">
+              <img
+                src="https://img.freepik.com/free-vector/sign-concept-illustration_114360-125.jpg?w=740&t=st=1692119109~exp=1692119709~hmac=7fc61e1522c4a4b7475ac019edfbc472808b2aef531fc344851fb404e3063469"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+              <img
+                src="https://img.freepik.com/free-vector/photo-sharing-concept-illustration_114360-405.jpg?w=740&t=st=1692119115~exp=1692119715~hmac=b34e9ae213f70395ae844dea2c262e60691228fe12c7cad4926099c2c0902907"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+              <img
+                src="https://img.freepik.com/free-vector/prototyping-process-concept-illustration_114360-1636.jpg?w=740&t=st=1692119120~exp=1692119720~hmac=f55d5a61a91ebf2a8debba6d2d01ed009f2d79e3c3ab09d311fdf890b59d3b51"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
