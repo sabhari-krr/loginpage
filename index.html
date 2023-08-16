@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- Including CSS files -->
+    <link rel="stylesheet" href="styles.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -43,31 +44,31 @@
   </head>
   <body>
     <div class="container d-sm-flex align-items-center vh-100">
-      <div class="container l rounded-3 shadow">
+      <div class="container l">
         <div
           id="carouselExampleInterval"
           class="carousel slide"
           data-bs-ride="carousel"
         >
-          <div class="carousel-inner">
+          <div class="carousel-inner carouselimg">
             <div class="carousel-item active" data-bs-interval="4000">
               <img
                 src="https://img.freepik.com/free-vector/tablet-login-concept-illustration_114360-7863.jpg?w=740&t=st=1692107549~exp=1692108149~hmac=1d5ee0fe59df0a32bad2470014b0015c7c14ec2052c7b89a4548ecc210443969"
-                class="d-block w-100"
+                class="d-block rounded-3 shadow w-100"
                 alt="..."
               />
             </div>
             <div class="carousel-item" data-bs-interval="4000">
               <img
                 src="https://img.freepik.com/free-vector/two-factor-authentication-concept-illustration_114360-5598.jpg?w=740&t=st=1692110211~exp=1692110811~hmac=793c3094b2c3278cb034ee7d228eabbc16e4d93e1078efa4d02d1e6d27dc7b0d"
-                class="d-block w-100"
+                class="d-block rounded-3 shadow w-100"
                 alt="..."
               />
             </div>
             <div class="carousel-item" data-bs-interval="4000">
               <img
                 src="https://img.freepik.com/free-vector/e-wallet-concept-illustration_114360-7561.jpg?w=740&t=st=1692110444~exp=1692111044~hmac=e1e330c03c4fa1e680b867a8ed8806edc524465bceb25abb9d28800cc1e543be"
-                class="d-block w-100"
+                class="d-block w-100 rounded-3 shadow"
                 alt="..."
               />
             </div>
@@ -77,7 +78,7 @@
       <div class="container r">
         <div class="row text-center">
           <div class="col-auto mx-auto mt-5 mb-2">
-            <h2 class="text-black-70 display-6 font-monospace">
+            <h2 class="text-black-70 display-6 company font-monospace fw-bold">
               Welcome to, Eonix
             </h2>
           </div>
@@ -87,14 +88,14 @@
           <div class="col-auto">
             <a
               href="#"
-              class="btn btn-lg btn-outline-danger active shadow px-md-5"
+              class="btn btn-lg btn-outline-dark active shadow px-md-5"
               >Login</a
             >
           </div>
           <div class="col-auto">
             <a
               href="register.html"
-              class="btn btn-lg btn-outline-danger shadow px-md-5"
+              class="btn btn-lg btn-outline-dark shadow px-md-5"
               >Sign Up</a
             >
           </div>
@@ -132,10 +133,10 @@
             </div>
             <div class="row mb-2 align-items-center">
               <div class="col-auto mx-auto">
-                <button href="#" class="btn btn-danger">Sign In &rarr;</button>
+                <button href="#" class="btn btn-dark">Sign In &rarr;</button>
               </div>
               <div class="col-auto mx-auto">
-                <a href="#" class="text-reset">Forgot password</a>
+                <a href="#" class="text-light">Forgot password</a>
               </div>
             </div>
           </form>
