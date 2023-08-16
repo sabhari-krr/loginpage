@@ -1,0 +1,19 @@
+body {
+  background: rgb(221, 68, 69);
+  background: linear-gradient(
+    138deg,
+    rgba(221, 68, 69, 1) 0%,
+    rgba(240, 140, 90, 0.9136029411764706) 44%,
+    rgba(255, 19, 39, 1) 100%
+  );
+}
+.carouselimg {
+  box-shadow: 11px 11px 9px -3px rgba(29, 29, 31, 0.61);
+  -webkit-box-shadow: 11px 11px 9px -3px rgba(29, 29, 31, 0.61);
+  -moz-box-shadow: 11px 11px 9px -3px rgba(29, 29, 31, 0.61);
+}
+.carouselimgreg {
+  box-shadow: 11px 11px 9px -3px rgba(255, 236, 236, 0.61);
+  -webkit-box-shadow: 11px 11px 9px -3px rgba(255, 236, 236, 0.61);
+  -moz-box-shadow: 11px 11px 9px -3px rgba(255, 236, 236, 0.61);
+}
